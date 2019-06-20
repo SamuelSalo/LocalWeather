@@ -4,7 +4,6 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.location.Geocoder;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
@@ -33,7 +32,7 @@ public class MainActivity extends Activity implements LocationListener {
 
         latitudeField = findViewById(R.id.viewLatitude);
         longitudeField = findViewById(R.id.viewLongitude);
-        cityField = findViewById(R.id.viewCity)
+        cityField = findViewById(R.id.viewCity);
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
@@ -117,6 +116,5 @@ public class MainActivity extends Activity implements LocationListener {
     public void onProviderDisabled(String provider) {
         Toast.makeText(this, "Disabled provider " + provider,
                 Toast.LENGTH_SHORT).show();
-    }
     }
 }
