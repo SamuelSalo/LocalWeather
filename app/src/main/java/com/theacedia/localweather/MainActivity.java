@@ -52,7 +52,7 @@ public class MainActivity extends Activity implements LocationListener {
     String provider;
 
     String weatherSetCity;
-    final String apiKey = "c3a60c4eabf8c88a705e053fe34230ce";
+    final String apiKey = "*************************";
     final String urladdress = "https://api.openweathermap.org/data/2.5/weather";
     final String units = "metric";
     RequestQueue mRequestQueue;
